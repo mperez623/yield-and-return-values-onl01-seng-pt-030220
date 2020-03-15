@@ -2,10 +2,12 @@ require 'pry'
 
 def hello(array)
   i = 0
+  micah = []
   while i < array.length
-    yield(array[i])
+    micah << yield(array[i]) 
     i += 1
   end
+  return micah
 end
 
 
